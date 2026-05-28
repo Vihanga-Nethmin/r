@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getAllCustomer, saveCustomer } from '../service/customer'
+import { getAllCustomer } from '../service/customer'
 
 const Customer = () => {
   const [customers, setCustomers] = useState([])
@@ -30,11 +30,6 @@ const Customer = () => {
 
   const handleOnSave = async () => {
     try {
-      const customer = {
-        name,
-        age,
-        isAdmin
-      }
       console.log("Saved")
       alert("saved")
     } catch (err) {}
