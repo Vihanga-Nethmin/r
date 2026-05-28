@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getAllCustomer, saveCustomer } from '../service/customer'
 
 const Customer = () => {
@@ -35,7 +35,6 @@ const Customer = () => {
         age,
         isAdmin
       }
-      const res = await saveCustomer(customer)
       console.log("Saved")
       alert("saved")
     } catch (err) {}
